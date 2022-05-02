@@ -1,0 +1,144 @@
+{
+  "title": "Customer Profile",
+  "description": "...",
+  "type": "object",
+  "properties": {
+    "simple-array": {
+      "title": "Custom array of strings",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "widget": {
+          "props": {
+            "class": "form-control"
+          }
+        }
+      }
+    },
+    "array": {
+      "title": "Custom array of strings",
+      "type": "array",
+      "items": [
+        {
+          "title": "uno",
+          "type": "integer",
+          "widget": {
+            "type": "vuec-textarea",
+            "props": {
+              "class": "form-control"
+            }
+          }
+        },
+        {
+          "title": "Checkbox",
+          "description": "Enter your checkbox",
+          "type": "string",
+          "enum": ["Male", "Female"],
+          "widget": {
+            "type": "vuec-checkbox",
+            "props": {}
+          }
+        }
+      ],
+      "additionalItems": {
+        "title": "A string",
+        "type": "string",
+        "default": "lorem ipsum",
+        "widget": {
+          "props": {
+            "class": "form-control"
+          }
+        }
+      }
+    },
+    "array-object": {
+      "title": "Custom array of strings",
+      "type": "array",
+      "items": {
+        "title": "Object",
+        "description": "Enter your object",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "name",
+            "type": "string",
+            "widget": {
+              "props": {
+                "class": "form-control"
+              }
+            }
+          },
+          "email": {
+            "title": "email",
+            "type": "string",
+            "format": "email",
+            "widget": {
+              "props": {
+                "class": "form-control"
+              }
+            }
+          },
+          "age": {
+            "title": "Age",
+            "type": "integer",
+            "minimum": 18,
+            "maximum": 150,
+            "widget": {
+              "props": {
+                "class": "form-control"
+              }
+            }
+          }
+        }
+      }
+    },
+    "array-objects-table": {
+      "title": "Custom array with objects of any type in table",
+      "type": "array",
+      "widget": {
+        "type": "vuec-object-array"
+      },
+      "items": {
+        "title": "Object",
+        "description": "Enter your object",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "name",
+            "description": "Enter your name",
+            "type": "string",
+            "widget": {
+              "props": {
+                "class": "form-control"
+              }
+            }
+          },
+          "email": {
+            "title": "email",
+            "description": "Enter your email",
+            "type": "string",
+            "format": "email",
+            "widget": {
+              "props": {
+                "class": "form-control"
+              }
+            }
+          },
+          "age": {
+            "title": "Age",
+            "description": "Enter your age",
+            "type": "integer",
+            "minimum": 18,
+            "maximum": 150,
+            "widget": {
+              "props": {
+                "class": "form-control"
+              }
+            }
+          }
+        },
+        "headers": [{ "key": "age", "text": "Age" }]
+      }
+    }
+  }
+}

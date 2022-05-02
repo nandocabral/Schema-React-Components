@@ -1,0 +1,110 @@
+{
+  "title": "Customer Profile",
+  "description": "...",
+  "type": "object",
+  "properties": {
+    "basic": {
+      "title": "Date picker basic",
+      "description": "Select your date",
+      "type": "string",
+      "widget": {
+        "type": "vuec-date-range-picker",
+        "props": {
+          "class": "form-control",
+          "autoUpdateInput": false
+        }
+      }
+    },
+    "with-time-picker": {
+      "title": "Datetime picker basic",
+      "description": "Select your date",
+      "type": "string",
+      "widget": {
+        "type": "vuec-date-range-picker",
+        "props": {
+          "class": "form-control",
+          "timePicker": true,
+          "locale": {
+            "format": "DD/MM/YY hh:mm A"
+          }
+        }
+      }
+    },
+    "single-date-picker": {
+      "title": "Single Date picker basic",
+      "description": "Select your date",
+      "type": "string",
+      "widget": {
+        "type": "vuec-date-range-picker",
+        "props": {
+          "class": "form-control",
+          "singleDatePicker": true,
+          "showDropdowns": true,
+          "minYear": 1901,
+          "maxYear": 2019
+        }
+      }
+    },
+    "predefined-date-ranges": {
+      "title": "Predefined ranges",
+      "description": "Select your date",
+      "type": "string",
+      "widget": {
+        "type": "vuec-date-range-picker",
+        "props": {
+          "class": "form-control",
+          "enablePredefinedRanges": true
+        }
+      }
+    },
+    "custom-date-ranges": {
+      "title": "Date picker basic",
+      "description": "Select your date",
+      "type": "string",
+      "widget": {
+        "type": "vuec-date-range-picker",
+        "props": {
+          "class": "form-control",
+          "ranges": {
+            "Año 2019": ["01-01-2019", "31-12-2019"],
+            "Año 2018": ["01-01-2018", "31-12-2018"]
+          }
+        }
+      }
+    },
+    "empty-start": {
+      "title": "Date picker basic",
+      "description": "Select your date",
+      "type": "string",
+      "widget": {
+        "type": "vuec-date-range-picker",
+        "props": {
+          "class": "form-control",
+          "autoUpdateInput": false
+        }
+      }
+    },
+    "date": {
+      "title": "Date",
+      "description": "Enter your date",
+      "type": "string",
+      "widget": {
+        "props": {
+          "type": "date",
+          "class": "form-control"
+        }
+      }
+    },
+    "time": {
+      "title": "Time",
+      "description": "Enter your time",
+      "type": "string",
+      "widget": {
+        "props": {
+          "type": "time",
+          "class": "form-control"
+        }
+      }
+    }
+  }
+}

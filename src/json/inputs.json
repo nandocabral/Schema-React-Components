@@ -1,0 +1,144 @@
+{
+  "title": "Customer Profile",
+  "description": "...",
+  "type": "object",
+  "properties": {
+    "text": {
+      "title": "Text",
+      "description": "Enter your text",
+      "type": "string",
+      "widget": {
+        "props": {
+          "class": "form-control"
+        }
+      }
+    },
+    "money": {
+      "title": "Number",
+      "description": "Enter your number",
+      "type": "string",
+      "widget": {
+        "props": {
+          "decimal": ".",
+          "thousands": ",",
+          "prefix": "$ ",
+          "suffix": " mxn",
+          "precision": 2,
+          "masked": false,
+          "class": "form-control"
+        }
+      }
+    },
+    "password": {
+      "title": "Password",
+      "description": "Enter your password",
+      "type": "string",
+      "widget": {
+        "props": {
+          "type": "password",
+          "class": "form-control"
+        }
+      }
+    },
+    "email": {
+      "title": "Email",
+      "description": "Enter your email",
+      "type": "string",
+      "widget": {
+        "props": {
+          "type": "email",
+          "class": "form-control"
+        }
+      }
+    },
+    "number": {
+      "title": "Number",
+      "description": "Enter your number",
+      "type": "string",
+      "widget": {
+        "props": {
+          "type": "number",
+          "class": "form-control"
+        }
+      }
+    },
+    "url": {
+      "title": "Url",
+      "description": "Enter your url",
+      "type": "string",
+      "widget": {
+        "props": {
+          "type": "url",
+          "class": "form-control"
+        }
+      }
+    },
+    "tel": {
+      "title": "Tel",
+      "description": "Enter your tel",
+      "type": "string",
+      "widget": {
+        "props": {
+          "type": "tel",
+          "class": "form-control"
+        }
+      }
+    },
+    "date": {
+      "title": "Date",
+      "description": "Enter your date",
+      "type": "string",
+      "widget": {
+        "props": {
+          "type": "date",
+          "class": "form-control"
+        }
+      }
+    },
+    "time": {
+      "title": "Time",
+      "description": "Enter your time",
+      "type": "string",
+      "widget": {
+        "props": {
+          "type": "time",
+          "class": "form-control"
+        }
+      }
+    },
+    "range": {
+      "title": "Range",
+      "description": "Enter your range",
+      "type": "string",
+      "widget": {
+        "props": {
+          "type": "range",
+          "class": "form-control"
+        }
+      }
+    },
+    "color": {
+      "title": "Color",
+      "description": "Enter your color",
+      "type": "string",
+      "widget": {
+        "props": {
+          "type": "color",
+          "class": "form-control"
+        }
+      }
+    },
+    "file": {
+      "title": "File",
+      "description": "Enter your file",
+      "type": "string",
+      "contentEncoding": "base64",
+      "widget": {
+        "props": {
+          "type": "file",
+          "class": "form-control"
+        }
+      }
+    }
+  }
+}

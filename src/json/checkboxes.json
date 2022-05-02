@@ -1,0 +1,40 @@
+{
+  "title": "Customer Profile",
+  "description": "...",
+  "type": "object",
+  "properties": {
+    "checkbox": {
+      "title": "Checkbox",
+      "description": "Something desc ...",
+      "type": "string",
+      "enum": ["Male", "Female"],
+      "widget": {
+        "type": "vuec-checkbox",
+        "props": {}
+      }
+    },
+    "checkbox-single": {
+      "title": "Checkbox single with custom value",
+      "description": "Are you agree?",
+      "type": "string",
+      "widget": {
+        "type": "vuec-checkbox",
+        "props": {
+          "true-value": "yes",
+          "false-value": "not"
+        }
+      }
+    },
+    "checkbox-toggle": {
+      "title": "Checkbox toggle",
+      "type": "string",
+      "widget": {
+        "type": "vuec-toggle-checkbox",
+        "props": {
+          "true-value": true,
+          "false-value": false
+        }
+      }
+    }
+  }
+}

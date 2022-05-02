@@ -1,0 +1,27 @@
+{
+  "title": "Customer Profile",
+  "description": "...",
+  "type": "object",
+  "properties": {
+    "radio": {
+      "title": "Radio",
+      "description": "Enter your radio",
+      "type": "string",
+      "enum": ["Male", "Female"],
+      "widget": {
+        "type": "vuec-radio"
+      }
+    },
+    "textarea": {
+      "title": "Textarea",
+      "description": "Enter your textarea",
+      "type": "string",
+      "widget": {
+        "type": "vuec-textarea",
+        "props": {
+          "class": "form-control"
+        }
+      }
+    }
+  }
+}

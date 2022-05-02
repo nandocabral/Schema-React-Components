@@ -1,0 +1,21 @@
+{
+  "title": "Customer Profile",
+  "description": "...",
+  "type": "object",
+  "properties": {
+    "single-64": {
+      "title": "Single 64 image",
+      "description": "Single image",
+      "type": "string",
+      "widget": {
+        "type": "vuec-single-image",
+        "props": {
+          "archiving": {
+            "getFileUrl": "http://localost/obtener?file=",
+            "typesFiles": ["jpg", "png"]
+          }
+        }
+      }
+    }
+  }
+}

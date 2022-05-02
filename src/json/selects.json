@@ -1,0 +1,104 @@
+{
+  "title": "Customer Profile",
+  "description": "...",
+  "type": "object",
+  "properties": {
+    "ajax-autocomplete": {
+      "title": "Custom array of strings",
+      "type": "array",
+      "widget": {
+        "type": "vuec-autocomplete",
+        "props": {
+          "minimumInputLength": 2,
+          "archiving": {
+            "authorization": "Basic ZGVzYXJyb2xsb0BzdHguY29tLm14OmNVcVI1bjVyaFpKV1ZsaUh3bVFOXw==",
+            "url": "http://localhost:8090//archiving:siaffi/catalogos:consultar",
+            "schema": "estados",
+            "key": "id",
+            "value": "payload->estado",
+            "limit": 5,
+            "filter": [
+              {
+                "field": "recolector_id",
+                "operator": "=",
+                "value": "edit"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "ajax-simple": {
+      "title": "Custom array of strings",
+      "type": "string",
+      "widget": {
+        "type": "vuec-autocomplete",
+        "props": {
+          "archiving": {
+            "authorization": "Basic ZGVzYXJyb2xsb0BzdHguY29tLm14OmNVcVI1bjVyaFpKV1ZsaUh3bVFOXw==",
+            "url": "http://localhost:8090//archiving:siaffi/catalogos:consultar",
+            "schema": "estados",
+            "key": "id",
+            "value": "payload->estado",
+            "limit": 5
+          }
+        }
+      }
+    },
+    "simple-array": {
+      "title": "Custom array of strings",
+      "type": "array",
+      "widget": {
+        "type": "vuec-autocomplete",
+        "props": {
+          "multiple": true,
+          "class": "form-control"
+        }
+      },
+      "items": {
+        "type": "string",
+        "enum": ["Pedro", "Paco", "Luis"]
+      }
+    },
+    "autocomplete": {
+      "title": "Autocomplete",
+      "description": "Select one option",
+      "type": "string",
+      "enum": ["Pedro", "Paco", "Luis"],
+      "widget": {
+        "type": "vuec-autocomplete",
+        "props": {
+          "class": "form-control"
+        }
+      }
+    },
+    "select": {
+      "title": "Select",
+      "description": "Select one option",
+      "type": "string",
+      "enum": ["Pedro", "Paco", "Luis"],
+      "widget": {
+        "type": "vuec-select",
+        "props": {
+          "class": "form-control"
+        }
+      }
+    },
+    "select-multiple": {
+      "title": "Select Multiple",
+      "description": "Select more options",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["Pedro", "Paco", "Luis"]
+      },
+      "widget": {
+        "type": "vuec-select",
+        "props": {
+          "class": "form-control",
+          "multiple": true
+        }
+      }
+    }
+  }
+}

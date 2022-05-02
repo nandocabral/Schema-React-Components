@@ -1,0 +1,47 @@
+{
+  "title": "Customer Profile",
+  "description": "...",
+  "type": "object",
+  "properties": {
+    "object": {
+      "title": "Object",
+      "description": "Enter your object",
+      "type": "object",
+      "properties": {
+        "name": {
+          "title": "name",
+          "description": "Enter your name",
+          "type": "string",
+          "widget": {
+            "props": {
+              "class": "form-control"
+            }
+          }
+        },
+        "email": {
+          "title": "email",
+          "description": "Enter your email",
+          "type": "string",
+          "format": "email",
+          "widget": {
+            "props": {
+              "class": "form-control"
+            }
+          }
+        },
+        "age": {
+          "title": "Age",
+          "description": "Enter your age",
+          "type": "integer",
+          "minimum": 18,
+          "maximum": 150,
+          "widget": {
+            "props": {
+              "class": "form-control"
+            }
+          }
+        }
+      }
+    }
+  }
+}
